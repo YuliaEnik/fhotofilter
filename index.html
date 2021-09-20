@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photofilter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Update CSS Variables with <span class="h1">JS</span></h2>
+
+<div class="wrapper">
+
+<div class="controls">
+    <div class="control">
+         <label for="invert">Invert:</label>
+         <input type="range" name="invert" class="invert" min="0" max="100" value="10" data-sizing="%">
+    </div>
+
+    <div class="control">
+         <label for="blur">Blur:</label>
+         <input type="range" name="blur" class="blur" min="0" max="25" value="0" data-sizing="px">
+   </div>
+
+    <div class="control">
+        <label for="contrast">Contrast:</label>
+        <input type="range" name="contrast" class="contrast" min="0" max="200" value="123" data-sizing="%">
+    </div>
+
+    <div class="control">
+        <label for="brightness">Brightness:</label>
+        <input type="range" name="brightness" class="brightness" min="0" max="200" value="95" data-sizing="%">
+    </div>
+
+    <div class="control">
+         <label for="base">Base color</label>
+         <input type="color" class="input-color" name="base" value="#ffc600">
+    </div>
+
+    <button class="reset">Reset</button>
+</div>
+
+
+   <img class="img" src="assets/img.jpeg" alt="pic">
+
+
+</div>
+
+<div class="presets">
+
+    <div class="preset">
+        <img class="preset-img first-filter" style="filter:blur(0px)contrast(65%) brightness(80%) invert(5%); background:#e66465" src="assets/img.jpeg" alt="pic">
+    </div>
+    <div class="preset">
+        <img class="preset-img second-filter" style="filter:blur(0px)contrast(125%) brightness(110%) invert(0%); background:#09b3dd" src="assets/img.jpeg" alt="pic">
+    </div>
+    <div class="preset">
+        <img class="preset-img third-filter" style="filter:blur(0px)contrast(180%) brightness(60%) invert(0%); background:#0c6d48"  src="assets/img.jpeg" alt="pic">
+    </div>
+    <div class="preset">
+        <img class="preset-img forth-filter" style="filter:blur(0px)contrast(110%) brightness(40%) invert(0%); background:#c9cad1"  src="assets/img.jpeg" alt="pic">
+    </div>
+
+</div>
+
+<!--<span>CSS3:</span>
+<input type="text" class="code-input" value="blur(0px) contrast(123%) brightness(95%) invert(10%)">
+-->
+    <script src="script.js"></script>
+</body>
+</html>
+
